@@ -1,13 +1,16 @@
 import './css/App.css';
-
-import Weaterlocation from './componts/index';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import LocationList from './componts/locationList';
 
 function App() {
   return (
+    <MuiThemeProvider>
     <div className="App">
-      <Weaterlocation/>
+      <LocationList></LocationList>
+     
       
     </div>
+    </MuiThemeProvider>
   );
 }
 
